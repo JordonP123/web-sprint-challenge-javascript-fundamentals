@@ -36,7 +36,7 @@ Edit this document to include your answers after each question. Make sure to lea
 3. 'this' can be bound using call, apply, or bind as well
 4. New binding, which is basically using 'this' to bind new keys to an object using a constructor function.  
 5. Why do we need super() in an extended class?
-`ANSWER----->`super is the object.create replacement, it grants access to the parent's properties and methods ofcourse.
+`ANSWER----->`it grants access to the parent's properties and methods ofcourse.
 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
