@@ -141,16 +141,8 @@ const zooAnimals = [
     💡 NOTE: The tests for 'consume' will pass if it is created correctly and also after you correctly complete the functions 'add' and 'greeting' below in Step 2.
   */
 
-  function consume(a,b, cb){
-   if(cb === add){
-    return a + b
-   }
-   else if(cb === multiply){
-    return a * b
-   }
-   else if(cb === greeting){
-    return `Hello ${a} ${b}, nice to meet you!`
-   }
+  function consume(a,b,cb){
+    return cb(a,b)
   }
  
   
@@ -161,8 +153,8 @@ const zooAnimals = [
  2. Return the sum of those numbers
  */
 
-function add(a,b){
-   return a + b
+function add(num1,num2){
+   return num1 + num2
   }
 
 
@@ -171,8 +163,8 @@ function add(a,b){
 2. Return the product of those numbers
 */
 
-function multiply(a,b){
-   return a * b
+function multiply(num1, num2){
+   return num1 * num2
   }
 
 
@@ -185,6 +177,9 @@ function multiply(a,b){
 function greeting(first_name, last_name){
    return `Hello ${first_name} ${last_name}, nice to meet you!`
   }
+
+  console.log(consume(5,4,add))
+  console.log(consume('jordon','pruitt',greeting))
   
   
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
